@@ -21,18 +21,22 @@
       <section id="introduction">
         <h2>1. Introudction</h2>
         <p>
-          According to PEW Research<sup>1</sup>, 96% of adults between 18-29
-          occasionally consult reviews before making a purchase. But does this
-          mean that higher ratings result in more product sales? Specifically,
-          what do higher ratings indicate for video game sales? Maybe higher
-          ratings lead to more game sales. But could some more obscure games
-          with a dedicated group of followers receive higher ratings than
-          popular games with significant sales volume? I am also curious whether
-          there has been an increase in the production of games in recent years
-          and, if so, what affect this increase has on the quality of games
-          based on review scores. Is it possible that an increase in the number
-          of games results in review scores decreasing with the oversaturation
-          of video game releases?
+          According to PEW Research<sup
+            ><a
+              href="https://www.pewresearch.org/internet/2016/12/19/online-reviews/"
+              >1</a
+            ></sup
+          >, 96% of adults between 18-29 occasionally consult reviews before
+          making a purchase. But does this mean that higher ratings result in
+          more product sales? Specifically, what do higher ratings indicate for
+          video game sales? Maybe higher ratings lead to more game sales. But
+          could some more obscure games with a dedicated group of followers
+          receive higher ratings than popular games with significant sales
+          volume? I am also curious whether there has been an increase in the
+          production of games in recent years and, if so, what affect this
+          increase has on the quality of games based on review scores. Is it
+          possible that an increase in the number of games results in review
+          scores decreasing with the oversaturation of video game releases?
         </p>
         <p>
           In this project, I plan to use Metacritic's user and critic review
@@ -45,10 +49,11 @@
         <h2>2. Data</h2>
         <p>
           This project uses two primary sources of data: Metacritic's<sup
-            >2</sup
+            ><a href="https://www.metacritic.com/">2</a></sup
           >
           game critic and game player review scores of different games and
-          VGChartz<sup>3</sup> data about video game sales.
+          VGChartz<sup><a href="https://www.vgchartz.com/">3</a></sup> data
+          about video game sales.
         </p>
         <h3>2.1 Review Scores</h3>
         <p>
@@ -223,12 +228,15 @@
         <p>
           I first thought this weaker correlation might be due to the difference
           in rating scales between the two groups of people. To prove this was
-          not the case, I created a boxplot of the two scores, using
-          ggplot<sup>4</sup>. This plot is shown in Figure 1. While there might
-          be slight differences in the interquartile range, the medians of the
-          two variables are the same. However, taking the difference between
-          their means results in a value of 1.67, which is somewhat significant.
-          A histogram that compares the two variables, such as the one in Figure
+          not the case, I created a boxplot of the two scores, using ggplot<sup
+            ><a href="https://cran.r-project.org/web/packages/ggplot2/"
+              >4</a
+            > </sup
+          >. This plot is shown in Figure 1. While there might be slight
+          differences in the interquartile range, the medians of the two
+          variables are the same. However, taking the difference between their
+          means results in a value of 1.67, which is somewhat significant. A
+          histogram that compares the two variables, such as the one in Figure
           2, gives us a good insight into the reason behind the difference in
           means. We can see that the meta scores have much higher counts of high
           reviews, while the user score has a greater number of low reviews.
@@ -254,10 +262,15 @@
           While the correlation isn't very strong, it does exist. There is some
           basis for the reason behind this correlation. Many companies send out
           review copies to critics in hopes that the reviews will boost
-          sales<sup>5</sup>. Critics usually publish their review scores in the
-          days before a game is released. This increases excitement around the
-          game before the general release date benefitting both the video game
-          company and the critic.
+          sales<sup
+            ><a
+              href="https://eriktwice.com/en/2021/09/24/what-are-review-copies/#:~:text=Review%20copies%20are%20what%20their,it%20to%20pen%20a%20review."
+              >5</a
+            > </sup
+          >. Critics usually publish their review scores in the days before a
+          game is released. This increases excitement around the game before the
+          general release date benefitting both the video game company and the
+          critic.
         </p>
         <p>
           However, the correlation appears to show that there probably isn't as
@@ -528,9 +541,12 @@
           which is evidence of some correlation, but it is not especially
           strong. Next, I created a plot of the number of games released in
           relation to the date. I also compared the total sales of games over
-          time, using the patchwork package<sup>6</sup>, to see if there was a
-          clear pattern between the number of games released and total sales.
-          This scatterplot can be seen in Figure 5.
+          time, using the patchwork package<sup
+            ><a href="https://cran.r-project.org/web/packages/patchwork/"
+              >6</a
+            > </sup
+          >, to see if there was a clear pattern between the number of games
+          released and total sales. This scatterplot can be seen in Figure 5.
         </p>
         <figure>
           <img
@@ -555,7 +571,12 @@
           The increase in games around the late 2000s is likely due to the
           release of new video game consoles that reached many mainstream
           markets. Many video game consoles could also play Blu-ray discs and
-          had multimedia features<sup>7</sup>, which increased their popularity.
+          had multimedia features<sup
+            ><a
+              href="https://ultimatepopculture.fandom.com/wiki/2000s_in_video_gaming"
+              >7</a
+            > </sup
+          >, which increased their popularity.
         </p>
         <p>
           To further analyze sales, I looked at how the passage of time has
